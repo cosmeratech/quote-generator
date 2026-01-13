@@ -29,6 +29,7 @@ const quotes = [
     { text: "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", author: "Aristotle" }
 ];
 
+let quoteCount = 0;
 const app = document.getElementById("app");
 
 // Create Card Container
@@ -84,6 +85,35 @@ function generateQuote() {
         quoteText.classList.add("animate-fade-in");
         authorText.classList.add("animate-fade-in");
     }, 200); // short delay for fade out effect
+
+    // Increment count and check for confetti milestone
+    quoteCount++;
+    if (quoteCount % 5 === 0) {
+        triggerConfetti();
+    }
+}
+
+function triggerConfetti() {
+    var duration = 3 * 1000;
+    var animationEnd = Date.now() + duration;
+    var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    function random(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    var interval = setInterval(function () {
+        var timeLeft = animationEnd - Date.now();
+
+        if (timeLeft <= 0) {
+            return clearInterval(interval);
+        }
+
+        var particleCount = 50 * (timeLeft / duration);
+        // since particles fall down, start a bit higher than random
+        confetti({ ...defaults, particleCount, origin: { x: random(0.1, 0.3), y: Math.random() - 0.2 } });
+        confetti({ ...defaults, particleCount, origin: { x: random(0.7, 0.9), y: Math.random() - 0.2 } });
+    }, 250);
 }
 
 // Event Listeners
