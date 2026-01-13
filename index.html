@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Random Quote Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Inspiration by Janvi Jèh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
-<body>
- <div id="app"></div>
-<script src="script.js"></script>
+
+<body class="h-screen w-screen overflow-hidden bg-black flex items-center justify-center">
+  <div
+    class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none">
+  </div>
+  <div id="app" class="relative z-10 w-full max-w-md px-4"></div>
+
+  <a href="https://github.com/cosmeratech" target="_blank"
+    class="fixed bottom-4 right-4 text-neutral-600 text-[10px] md:text-xs font-sans uppercase tracking-widest hover:text-neutral-300 transition-colors duration-300 z-50 no-underline">
+    Built by cosmeratech
+  </a>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
