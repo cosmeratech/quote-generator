@@ -6,7 +6,27 @@ const quotes = [
     { text: "You are stronger than you think.", author: "A.A. Milne" },
     { text: "Consistency creates confidence.", author: "Unknown" },
     { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
-    { text: "It always seems impossible until it's done.", author: "Nelson Mandela" }
+    { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+    { text: "You must take your opponent into a deep dark forest where 2+2=5, and the path leading out is only wide enough for one.", author: "Mikhail Tal" },
+    { text: "The blunders are all there on the board, waiting to be made.", author: "Savielly Tartakower" },
+    { text: "Chess is life in miniature. Chess is a struggle, chess is battles.", author: "Garry Kasparov" },
+    { text: "Play the opening like a book, the middlegame like a magician, and the endgame like a machine.", author: "Rudolf Spielmann" },
+    { text: "I don't believe in psychology. I believe in good moves.", author: "Bobby Fischer" },
+    { text: "My brain is the key that sets me free.", author: "Harry Houdini" },
+    { text: "Magic is wandering in the unknown.", author: "Ricky Jay" },
+    { text: "The magician takes the ordinary something and makes it do something extraordinary.", author: "The Prestige" },
+    { text: "People want to be fooled.", author: "Harry Houdini" },
+    { text: "Real magic is not about gaining power over others: it is about gaining power over yourself.", author: "Unknown" },
+    { text: "I don't believe in empirical science. I only believe in a priori truth.", author: "Kurt Gödel" },
+    { text: "Pure mathematics is, in its way, the poetry of logical ideas.", author: "Albert Einstein" },
+    { text: "God does not play dice with the universe.", author: "Albert Einstein" },
+    { text: "Mathematics is the language with which God has written the universe.", author: "Galileo Galilei" },
+    { text: "The moving power of mathematical invention is not reasoning but imagination.", author: "Augustus De Morgan" },
+    { text: "Imagination is more important than knowledge.", author: "Albert Einstein" },
+    { text: "Simplicity is the ultimate sophistication.", author: "Leonardo da Vinci" },
+    { text: "I think, therefore I am.", author: "René Descartes" },
+    { text: "Happiness depends upon ourselves.", author: "Aristotle" },
+    { text: "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", author: "Aristotle" }
 ];
 
 const app = document.getElementById("app");
